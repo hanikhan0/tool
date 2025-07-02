@@ -339,6 +339,22 @@
         .tool-link:hover i {
             transform: translateX(5px);
         }
+
+        /* Added styles for tool card links */
+        .tool-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .tool-card-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tool-card-link:hover .tool-card {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
         
         /* Categories */
         .categories {
@@ -653,66 +669,26 @@
             </div>
             
             <div class="tools-grid">
-    <!-- Tool Card 1 - Now fully clickable -->
-    <a href="tool/img-compress.html" class="tool-card-link">
-        <div class="tool-card">
-            <div class="tool-img">
-                <i class="fas fa-compress-alt"></i>
-                <span class="tool-badge">Popular</span>
-            </div>
-            <div class="tool-content">
-                <h3>Image Compressor</h3>
-                <p>Reduce image file size without losing quality. Supports JPG, PNG, and WebP formats.</p>
-                <div class="tool-link">
-                    Use Tool <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="tool-stats">
-                    <span><i class="fas fa-users"></i> 10K+ daily</span>
-                    <span><i class="fas fa-thumbs-up"></i> 98%</span>
-                </div>
-            </div>
-        </div>
-    </a>
-</div>
-
-<style>
-    /* Add these styles to your existing CSS */
-    .tool-card-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        transition: transform 0.3s ease;
-    }
-    
-    .tool-card-link:hover {
-        transform: translateY(-5px);
-    }
-    
-    .tool-card-link:hover .tool-card {
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-    
-    .tool-card {
-        transition: all 0.3s ease;
-        position: relative;
-    }
-    
-    .tool-link {
-        display: inline-flex;
-        align-items: center;
-        color: var(--primary);
-        font-weight: 600;
-        transition: color 0.3s;
-    }
-    
-    .tool-card-link:hover .tool-link {
-        color: var(--secondary);
-    }
-    
-    .tool-card-link:hover .tool-link i {
-        transform: translateX(5px);
-    }
-</style>
+                <!-- Tool Card 1 - Now with hyperlink -->
+                <a href="img-compress.html" class="tool-card-link">
+                    <div class="tool-card">
+                        <div class="tool-img">
+                            <i class="fas fa-compress-alt"></i>
+                            <span class="tool-badge">Popular</span>
+                        </div>
+                        <div class="tool-content">
+                            <h3>Image Compressor</h3>
+                            <p>Reduce image file size without losing quality. Supports JPG, PNG, and WebP formats.</p>
+                            <div class="tool-link">
+                                Use Tool <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="tool-stats">
+                                <span><i class="fas fa-users"></i> 10K+ daily</span>
+                                <span><i class="fas fa-thumbs-up"></i> 98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 
                 <!-- Tool Card 2 -->
                 <div class="tool-card">
@@ -925,7 +901,7 @@
                 <div class="footer-col">
                     <h3>Image Tools</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Image Compressor</a></li>
+                        <li><a href="image-compressor.html">Image Compressor</a></li>
                         <li><a href="#">Image Converter</a></li>
                         <li><a href="#">Image Resizer</a></li>
                         <li><a href="#">Background Remover</a></li>
